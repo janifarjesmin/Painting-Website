@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik Moonrocks', cursive;
+/*  font-family: 'Satisfy', cursive; */
+}
+header{
+    background-image: url('image/paintedPortrait003.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left left;
+    height: 100vh;
+}
+nav {
+    background-color: #f8efba22;
+    border-bottom: 1px solid black;
+    padding: 18px 0;
+}
+.nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-image img{
+    width: 70px;
+    height: 35px;
+    margin-right: 50px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    margin-left: 120px;
+    font-size: 25px;
+}
+li{
+    margin: 0 30px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #085784;
+    transition: 0.3s ease-in-out;
+}
+a:hover::before {
+    width: 100%;
+}
+.nav-btn{
+    font-size: 20px;
+    padding: 20px 30px;
+    border-radius: 40px;
+    background: none;
+    border: 1px solid #ccc6a094;
+    color: black;
+    cursor: pointer;
+    margin-left: 80px;
+    transition: 0.5s;
+}
+.nav-btn:hover{
+    background-color: #085784;
+    color: white;
+}
+
+/* first section code start  */
+
+.first-section{
+    width: 900px;
+    margin: 100px auto;
+}
+.first-section h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.first-section p{
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+    line-height: 3.5rem;
+}
+
+/* second section code start  */
+
+#second-section{
+    background-color: #ffcccc53;
+    padding: 70px 0;
+}
+.second-section-container{
+    width: 1200px;
+    margin: auto;
+}
+.second-section-container h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 70px;
+}
+.second-section-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.second-section-img{
+    width: 370px;
+}
+.second-section-img img{
+    width: 100%;
+    height: 380px;
+    cursor: grab;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
+/* third section code start  */
+
+#third-section{
+    background-image: url(image/images\ \(34\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70vh;
+}
+.third-section-container{
+    width: 1000px;
+    margin: auto;
+    padding: 170px 0;
+}
+.third-section-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.third-section-parent{
+    text-align: center;
+}
+.third-section-parent i{
+    font-size: 70px;
+    color: white;
+    margin-bottom: 30px;
+}
+.third-section-parent h3{
+    font-family: 'Satisfy', cursive;
+    font-size: 45px;
+    color: white;
+}
+
+/* fourth section code start  */
+
+.fourth-section{
+    width: 1200px;
+    margin: auto;
+    padding: 100px 0;
+}
+.fourth-section h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+.fourth-section-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 80px 30px;
+}
+.fourth-section-img{
+    width: 360px;
+}
+.fourth-section-img p{
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+    padding-top: 30px;
+}
+.fourth-section-img img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
+/* Contact section code start  */
+
+#contact-section{
+    background-image: url(image/images\ \(16\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 140vh;
+}
+form{
+    margin-top: 50px;
+    padding: 100px 0 50px 0;
+}
+.form-div{
+    width: 1000px;
+    margin: auto;
+    padding: 70px 0;
+    background: linear-gradient(rgba(0, 0, 255, 0.756), rgb(164, 104, 114));
+}
+.form-div h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 50px;   
+}
+.form-parent{
+    padding: 0 60px;
+}
+.form-input{
+    display: block;
+    font-family: 'Satisfy', cursive;
+    font-size: 35px;
+    color: white;
+    border: none;
+    background: none;
+    margin-bottom: 60px;
+    padding-left: 10px;
+    outline: none;
+    border-bottom: 2px solid white;
+    width: 100%;
+    height: 60px;
+}
+.form-input::placeholder{
+    color: white;
+}
+.submit-btn{
+    font-size: 30px;
+    font-family: 'Satisfy', cursive;
+    padding: 15px 60px;
+    border-radius: 50px;
+    margin-left: 310px;
+    border: none;
+    transition: 0.3s;
+}
+.submit-btn:hover{
+    background-color: #085784;
+    border-color: #085784;
+    color: white;
+}
+
+/* footer section code start  */
+
+footer{
+    background: linear-gradient( to right, #f8a5c2, #a55eea);
+    padding: 70px 0 30px 0;
+    margin-top: 80px;
+}
+.footer-section{
+    width: 1200px;
+    margin: auto;
+}
+.footer-content{
+    display: flex;
+    gap: 50px;
+}
+.footer-div{
+    font-size: 20px;
+    line-height: 2rem;
+}
+.footer-div p{
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.footer-copy{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 27px;
+}
+
+
+
